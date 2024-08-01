@@ -1,0 +1,248 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{virtual}-{###}",
+ "creation": "2024-07-24 17:50:45.292171",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ffaf",
+  "column_break_czvs",
+  "first_name",
+  "full_name",
+  "virtual",
+  "column_break_warv",
+  "mid_name",
+  "column_break_vmuv",
+  "last_name",
+  "section_break_wwzp",
+  "items",
+  "section_break_idas",
+  "subtotal",
+  "section_break_lfjo",
+  "address_section",
+  "address",
+  "pin_code",
+  "section_break_jsjy",
+  "contact_section",
+  "phone_number",
+  "profectional_number",
+  "column_break_lmwj",
+  "mail_section",
+  "email",
+  "profectional_e_mail",
+  "section_break_8ept",
+  "work_time_section",
+  "shift",
+  "reqire_shift",
+  "section_break_gyrb",
+  "joining_details_section",
+  "offer_latter",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ffaf",
+   "fieldtype": "Section Break",
+   "label": "Name"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "first name "
+  },
+  {
+   "fieldname": "column_break_warv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mid_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "mid name "
+  },
+  {
+   "fieldname": "column_break_vmuv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "last name "
+  },
+  {
+   "fieldname": "section_break_lfjo",
+   "fieldtype": "Tab Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "pin_code",
+   "fieldtype": "Data",
+   "label": "pin code"
+  },
+  {
+   "fieldname": "section_break_jsjy",
+   "fieldtype": "Tab Break",
+   "label": "Contact info"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "Phone number"
+  },
+  {
+   "fieldname": "profectional_number",
+   "fieldtype": "Phone",
+   "label": "profectional number"
+  },
+  {
+   "fieldname": "column_break_lmwj",
+   "fieldtype": "Tab Break",
+   "label": "E-mail"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "profectional_e_mail",
+   "fieldtype": "Data",
+   "label": "Profectional e mail"
+  },
+  {
+   "fieldname": "section_break_8ept",
+   "fieldtype": "Tab Break",
+   "label": "Working hours"
+  },
+  {
+   "fieldname": "shift",
+   "fieldtype": "Link",
+   "label": "Shift",
+   "options": "Shift"
+  },
+  {
+   "fieldname": "section_break_gyrb",
+   "fieldtype": "Tab Break",
+   "label": "Join"
+  },
+  {
+   "fieldname": "offer_latter",
+   "fieldtype": "Data",
+   "label": "offer latter"
+  },
+  {
+   "fieldname": "joining_details_section",
+   "fieldtype": "Section Break",
+   "label": "Joining details"
+  },
+  {
+   "fieldname": "address_section",
+   "fieldtype": "Section Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "contact_section",
+   "fieldtype": "Section Break",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "mail_section",
+   "fieldtype": "Section Break",
+   "label": "Mail"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "worker details",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_czvs",
+   "fieldtype": "Column Break",
+   "options": "f\"{self.first_name} \n{self.mid_name} {self.last_name}\""
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "full name ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "work_time_section",
+   "fieldtype": "Section Break",
+   "label": "work time"
+  },
+  {
+   "fieldname": "reqire_shift",
+   "fieldtype": "Data",
+   "label": "reqire shift"
+  },
+  {
+   "fieldname": "virtual",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "is_virtual": 1,
+   "label": "Virtual"
+  },
+  {
+   "fieldname": "section_break_wwzp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "items",
+   "options": "test 1"
+  },
+  {
+   "fieldname": "section_break_idas",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "subtotal",
+   "fieldtype": "Float",
+   "label": "subtotal",
+   "precision": "1"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-07-31 18:02:10.406247",
+ "modified_by": "Administrator",
+ "module": "Rentals",
+ "name": "worker details",
+ "naming_rule": "Expression",
+ "nsm_parent_field": "parent_worker_details",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

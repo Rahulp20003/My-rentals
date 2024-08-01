@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-31 11:10:20.831470",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "a",
+  "column_break_urst",
+  "b",
+  "column_break_mcmu",
+  "c",
+  "column_break_giwy",
+  "total"
+ ],
+ "fields": [
+  {
+   "fieldname": "a",
+   "fieldtype": "Currency",
+   "label": "A",
+   "precision": "1"
+  },
+  {
+   "fieldname": "column_break_urst",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "b",
+   "fieldtype": "Currency",
+   "label": "B",
+   "precision": "1"
+  },
+  {
+   "fieldname": "column_break_mcmu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "c",
+   "fieldtype": "Currency",
+   "label": "C",
+   "precision": "1"
+  },
+  {
+   "fieldname": "column_break_giwy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "precision": "1"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-31 17:52:59.654623",
+ "modified_by": "Administrator",
+ "module": "Rentals",
+ "name": "test 1",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

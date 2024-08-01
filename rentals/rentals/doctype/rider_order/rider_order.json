@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:RO-{MM}-{YYY}-{##}",
+ "creation": "2024-07-25 15:35:44.159926",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "custmer_name",
+  "contact_number",
+  "pickup_time",
+  "vehicle",
+  "column_break_nuyb",
+  "status",
+  "address",
+  "location"
+ ],
+ "fields": [
+  {
+   "fieldname": "custmer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Custmer name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Contact number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pickup_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Pickup time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_nuyb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "label": "vehicle",
+   "options": "Vehical",
+   "unique": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Geolocation",
+   "label": " location"
+  },
+  {
+   "default": "New",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "New\nAccepted\nRejected"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-29 12:08:57.441172",
+ "modified_by": "Administrator",
+ "module": "Rentals",
+ "name": "Rider order",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
